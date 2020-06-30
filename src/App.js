@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="quote-box">
+        <div id="text">Text within the quote-box</div>
+        <div id="author">Author</div>
+        <div id="new-quote"><button>New quote</button></div>
+        <button><a class="button" id="tweet-quote" target="_blank">
+        <i class="fa fa-twitter">tweet me</i></a></button>
     </div>
   );
 }
