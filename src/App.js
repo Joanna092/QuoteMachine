@@ -42,14 +42,38 @@ class App extends React.Component {
 
       return (
         <div id="quote-box">
-        <div id="text">{text}</div>
-        <div><img src={image} alt="Simpson Picture" /></div>
-        <div id="author">{author}</div>
-        <div id="new-quote"><button 
+        <h1>Simpsons quote generator</h1>
+         <div className="container">
+          <div className="row">
+        <div className="col-5"><img className="img-fluid" src={image} alt="Simpson Picture" /></div>
+        <div className="col-7 textContainer" id="text"><h4>{text}</h4></div>
+        </div>
+        </div>
+
+        <div id="author"><h3>~ {author}</h3></div>
+
+<div className="container">
+  <div className="row">
+
+
+  <div className="col buttons">
+
+<button type="button" className="btn-lg btn btn-outline-dark" onClick={() => window.open(`https://twitter.com/intent/tweet?text=${this.state.object.quote}%0a%0a~%20${this.state.object.character}`)} ><a class="button" id="tweet-quote" target="_blank">
+<i class="fa fa-twitter"> Tweet me</i></a></button>
+</div>
+
+
+    <div className="col buttons">
+
+        <button type="button" className="btn-lg btn btn-outline-dark"
         onClick={this.handleChange}
-        >New quote</button></div>
-        <button onClick={() => window.open(`https://twitter.com/intent/tweet?text=${this.state.object.quote}%0a%0a~%20${this.state.object.character}`)} ><a class="button" id="tweet-quote" target="_blank">
-        <i class="fa fa-twitter">tweet me</i></a></button>
+        >New quote</button>
+
+</div>
+
+
+        </div>
+        </div>
 
     </div>
       )
