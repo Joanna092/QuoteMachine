@@ -1,21 +1,57 @@
+body {
+background-color: #888c8f;
+background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
 #quote-box {
-  width: 500px;
-  padding: 250px 0px;
+  background-color: rgba(242, 242, 242, 0.4);
+  width: 700px;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 1px ridge #cccccc;
+  border-radius: 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 #text {
-  border: 2px solid red;
   text-align: center;
+  font-family: 'Pangolin', cursive;
 }
 
 #author {
-  border: 2px solid blue;
   text-align: right;
+  margin-right: 30px;
+  font-family: 'Pangolin', cursive;
 }
 
-#new-quote {
-  border: 2px solid green;
-  text-align: right;
+.textContainer { 
+  height: 345px; 
+  line-height: 340px;
 }
+
+.textContainer h4 {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px 0px;
+  font-family: 'Anton', sans-serif;
+}
+
+.buttons {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.btn {
+  padding-left: 100px;
+  padding-right: 100px;
+  font: normal normal normal 20px/2 FontAwesome;
+}
+
