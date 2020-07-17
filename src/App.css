@@ -1,13 +1,12 @@
 body {
-background-color: #888c8f;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+background-color:rgb(243, 156, 18);
+color: #b32d00; 
 }
 
 #quote-box {
-  background-color: rgba(242, 242, 242, 0.4);
+  background-color: white;
   width: 700px;
   margin: 0 auto;
-  border: 1px ridge #cccccc;
   border-radius: 2%;
   position: absolute;
   top: 50%;
@@ -16,6 +15,21 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
+
+@media only screen and (max-width: 768px) {
+  #quote-box {
+    top: 46%;
+    bottom: -31%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #quote-box {
+    min-height: 525px;
+  }
+}
+
 
 #text {
   text-align: center;
@@ -26,6 +40,26 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall.p
   text-align: right;
   margin-right: 30px;
   font-family: 'Pangolin', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  #author {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #author {
+    margin-right: 30px;
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: 411px) and (max-width: 424px) {
+  #author {
+    margin-right: 30px;
+    margin-top: -40px;
+  }
 }
 
 .textContainer { 
@@ -52,6 +86,54 @@ h1 {
 .btn {
   padding-left: 100px;
   padding-right: 100px;
-  font: normal normal normal 20px/2 FontAwesome;
+  font: normal normal normal 20px/2 FontAwesome; 
+
+  /*new styles*/
+   background-color:#b32d00;
+   color: white;
+   border: 2px solid transparent;
+   transition: all 1.2s ease 0s;
+   outline:none !important;
 }
 
+@media only screen and (max-width: 767px) {
+  .btn {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  .btn {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+.btn:hover {
+  border: 2px solid black;
+  background-color:orange;
+  color: black;
+  transition: all 1.2s ease 0s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  background-image: none  !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important; 
+}

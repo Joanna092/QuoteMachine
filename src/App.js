@@ -45,8 +45,8 @@ class App extends React.Component {
         <h1>Simpsons quote generator</h1>
          <div className="container">
           <div className="row">
-        <div className="col-5"><img className="img-fluid" src={image} alt="Simpson Picture" /></div>
-        <div className="col-7 textContainer" id="text"><h4>{text}</h4></div>
+        <div className="col col-sm-5"><img className="img-fluid" src={image} alt="Simpson Picture" /></div>
+        <div className="col col-sm-7 textContainer" id="text"><h4>{text}</h4></div>
         </div>
         </div>
 
