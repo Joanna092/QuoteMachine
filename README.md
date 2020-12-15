@@ -1,3 +1,5 @@
+NOTE: few days ago API I was using disappeared so for the time being the website doesn't display images and quotations. 
+
 Made with React.
 
 See app deployed to Netlify:
